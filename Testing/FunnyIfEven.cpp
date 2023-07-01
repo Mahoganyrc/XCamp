@@ -1,4 +1,18 @@
 #include <iostream>
+bool isEven(int n);
+
+int main () {
+    int x;
+    std::cin >> x;
+    if (isEven(x)) {
+        std::cout << "The number you entered is even";
+    }else {
+        std::cout << "The number you entered is odd";
+    }
+
+
+}
+
 
 bool isEven (int n) {
     if (n == 1) {
@@ -10006,16 +10020,3 @@ bool isEven (int n) {
 }
 
 
-int main () {
-    //std::cout << "if (n == 1) {\n\t" << "return false;" << std::endl;
-    for (int i = 3001; i <= 5000; i++) {
-        std::cout << "} else if (n == " << i << ") {\n\t" << "return ";
-        if (i % 2 == 0) {
-            std::cout << "true;" << std::endl;
-        }else {
-            std::cout << "false;" << std::endl;
-        }
-    }
-    std::cout << "}" << std::endl;
-
-}
