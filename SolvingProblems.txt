@@ -1,3 +1,9 @@
 #1 Get Input correctly
 #2 Get Program to work
 #3 Make it efficient
+
+
+#ERROR: Check for array size
+#ERROR: Check inside for loops
+#ERROR: Check for 0's or impossibles
+#ERROR: Read Question Carefully
