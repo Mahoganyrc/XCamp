@@ -8,17 +8,6 @@
 //int poolCount;
 //std::vector<int> poolCounts;
 //
-//
-//
-//int countDistinctElements(const std::vector<int>& vec) {
-//    std::unordered_set<int> distinctElements;
-//    for (int num : vec) {
-//        distinctElements.insert(num);
-//    }
-//    return distinctElements.size();
-//}
-//
-//
 //void findAmountOfPools(int x,int y, int poolSize) {
 //
 //    if (maze[x][y] == 0) {
@@ -108,8 +97,12 @@
 //            }
 //        }
 //    }
-//    std::cout << countDistinctElements(poolCounts) << std::endl;
-//   // std::cout << poolCount << std::endl;
+//    std::unordered_set<int> distinctElements;
+//    for (int num : poolCounts) {
+//        distinctElements.insert(num);
+//    }
+//
+//    std::cout << distinctElements.size() << std::endl;
 //
 //    return 0;
 //}
