@@ -14,14 +14,14 @@
 //bool visited[400][400];
 //std::queue <Coord> bfsQueue;
 //Coord jumps[8] = {
-//{1,2},
-//{1,-2},
-//{-1,2},
-//{-1,-2},
-//{2,1},
-//{2,-1},
-//{-2,1},
-//{-2,-1}
+//        {1,2},
+//        {1,-2},
+//        {-1,2},
+//        {-1,-2},
+//        {2,1},
+//        {2,-1},
+//        {-2,1},
+//        {-2,-1}
 //};
 //
 //std::string format (std::string input) {
@@ -46,35 +46,35 @@
 //    while (!bfsQueue.empty()) {
 //        int x = bfsQueue.size();
 //
-//            Coord current = bfsQueue.front();
-//            bfsQueue.pop();
-//            int addX;
-//            int addY;
-//            int step = board[current.x][current.y];
-//            for (int i = 0; i < 8; i++) {
-//                addX = jumps[i].x;
-//                addY = jumps[i].y;
-//                Coord input;
-//                input.x = current.x + addX;
-//                input.y = current.y + addY;
-//                if (
-//                        input.x < n &&
-//                        input.x >= 0 &&
-//                        input.y < m &&
-//                        input.y >= 0 &&
-//                        !visited[input.x][input.y]
-//                        ) {
+//        Coord current = bfsQueue.front();
+//        bfsQueue.pop();
+//        int addX;
+//        int addY;
+//        int step = board[current.x][current.y];
+//        for (int i = 0; i < 8; i++) {
+//            addX = jumps[i].x;
+//            addY = jumps[i].y;
+//            Coord input;
+//            input.x = current.x + addX;
+//            input.y = current.y + addY;
+//            if (
+//                    input.x < n &&
+//                    input.x >= 0 &&
+//                    input.y < m &&
+//                    input.y >= 0 &&
+//                    !visited[input.x][input.y]
+//                    ) {
 //
-//                    visited[current.x + addX][current.y + addY] = true;
-//                    if (board[input.x][input.y] > step+1 || board[input.x][input.y] == -1) {
-//                        board[input.x][input.y] = step+1;
-//                    }
-//                    bfsQueue.push(input);
+//                visited[current.x + addX][current.y + addY] = true;
+//                if (board[input.x][input.y] > step+1 || board[input.x][input.y] == -1) {
+//                    board[input.x][input.y] = step+1;
+//                }
+//                bfsQueue.push(input);
 ////                    bfs(input, step + 1);
 ////                    visited[current.x + addX][current.y + addY] = false;
 //
-//                }
 //            }
+//        }
 //
 //
 //    }
